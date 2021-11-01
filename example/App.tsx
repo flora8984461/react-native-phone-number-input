@@ -48,6 +48,25 @@ const App = () => {
             withDarkTheme
             withShadow
             autoFocus
+            textInputProps = {{
+              value: value,
+              rightIcon: {
+                name: 'check',
+                type: 'font-awesome',
+                color: valid ? 'green' : 'red',
+                size: 20,
+                onPress: () => {
+                    // phoneInput.current.clear();
+                    setValue('');
+                    setFormattedValue('');
+                    // setCountryCode('');
+                }
+              },
+              inputContainerStyle: {
+                // marginTop: 20,
+                borderBottomWidth: 0
+              },
+            }}
           />
           <TouchableOpacity
             style={styles.button}

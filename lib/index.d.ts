@@ -22,7 +22,7 @@ export interface PhoneInputProps {
   renderDropdownImage?: JSX.Element;
   containerStyle?: StyleProp<ViewStyle>;
   textContainerStyle?: StyleProp<ViewStyle>;
-  textInputProps?: TextInputProps;
+  textInputProps?: TextInputProps | Object;
   textInputStyle?: StyleProp<TextStyle>;
   codeTextStyle?: StyleProp<TextStyle>;
   flagButtonStyle?: StyleProp<ViewStyle>;

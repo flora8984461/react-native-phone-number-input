@@ -13,6 +13,7 @@
   "dependencies": {
     "react": "16.13.1",
     "react-native": "0.63.0",
+    "react-native-elements": "^3.4.2",
     "react-native-phone-number-input": "../"
   },
   "devDependencies": {

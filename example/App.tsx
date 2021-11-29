@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import PhoneInput from 'react-native-phone-number-input';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import { Input } from 'react-native-elements';
 
 const App = () => {
   const [value, setValue] = useState('');
@@ -49,6 +50,7 @@ const App = () => {
             withShadow
             autoFocus
             textInputProps = {{
+              InputComp: Input,
               value: value,
               rightIcon: {
                 name: 'check',
@@ -62,11 +64,30 @@ const App = () => {
                     // setCountryCode('');
                 }
               },
-              inputContainerStyle: {
-                // marginTop: 20,
-                borderBottomWidth: 0
+              containerStyle: {
+                flex: 1,
+                flexDirection: 'row',
+                alignItems: 'center',
               },
+              inputContainerStyle: {
+                borderBottomWidth: 0,
+                flex: 1,
+              }
             }}
+            // textInputStyle = {{
+            // }}
+            textContainerStyle = {{
+              flex: 1,
+              width: 200,
+              backgroundColor: '#F8F9F9',
+              paddingHorizontal: 5,
+              paddingVertical: 1,
+              // textAlign: 'left',
+              flexDirection: 'row',
+              alignItems: 'center',
+            }}
+            // containerStyle={{
+            // }}
           />
           <TouchableOpacity
             style={styles.button}

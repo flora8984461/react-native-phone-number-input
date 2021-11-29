@@ -1,7 +1,7 @@
 {
-  "name": "react-native-phone-number-input-custom-input",
-  "version": "1.0.0",
-  "description": "Phone Number Input Component with Custom Input",
+  "name": "react-native-phone-number-input",
+  "version": "2.1.0",
+  "description": "Phone Number Input Component",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flora8984461/react-native-phone-number-input/tree/addCustomInput"
+    "url": "git+https://github.com/garganurag893/react-native-phone-number-input.git"
   },
-  "author": "flora8984461",
+  "author": "anuraggarg",
   "license": "MIT",
   "peerDependencies": {
     "react": "*",
@@ -31,12 +31,8 @@
     "android"
   ],
   "dependencies": {
-    "add": "^2.0.6",
     "google-libphonenumber": "^3.2.10",
-    "react-native-country-picker-modal": "^2.0.0",
-    "react-native-safe-area-context": "^3.3.2",
-    "react-native-vector-icons": "^9.0.0",
-    "yarn": "^1.22.17"
+    "react-native-country-picker-modal": "^2.0.0"
   },
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.61.0"

@@ -53,9 +53,8 @@ const App = () => {
               InputComp: Input,
               value: value,
               rightIcon: {
-                name: 'check',
+                name: 'times',
                 type: 'font-awesome',
-                color: valid ? 'green' : 'red',
                 size: 20,
                 onPress: () => {
                     // phoneInput.current.clear();

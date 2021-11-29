@@ -1,6 +1,36 @@
 A fork of [garganurag893/react-native-phone-number-input](https://github.com/garganurag893/react-native-phone-number-input)
 Added custom input in order to add custom input and make minor adjustments to the style;
 
+added prop:
+`InputComp`
+
+```tsx
+import { Input } from 'react-native-elements';
+
+  textInputProps = {{
+  InputComp: Input,
+  value: value,
+  rightIcon: {
+    name: 'times',
+    type: 'font-awesome',
+    size: 20,
+    onPress: () => {
+        setValue('');
+        setFormattedValue('');
+    }
+  },
+  containerStyle: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  inputContainerStyle: {
+    borderBottomWidth: 0,
+    flex: 1,
+  }
+}}
+```
+
 ---
 
 <div align="center">
